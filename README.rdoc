@@ -23,6 +23,14 @@ Things you may want to cover:
 
 * ...
 
+I installed with ruby 2.3.0 and updated the gemfile to use latest rails (currently 5.0.0.beta2)
+
+Copy the database.yml.example to database.yml and update the settings accordingly
+
+should run straight out of the box
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
+
+The origin site template is here
+http://wrapbootstrap.com/preview/WB04HF123
