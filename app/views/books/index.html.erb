@@ -1,0 +1,29 @@
+<div id="books_index">
+  <h1>All Books</h1>
+  <%= link_to "New Book", new_book_path, class: "mb-sm btn btn-primary" %>
+  <div class="table-responsive">
+    <table class="books table table-hover" width="100%">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th width="50%">Content</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @books.each do |book| %>
+          <tr class="book">
+            <td><%= link_to book.title, edit_book_path(book) %></td>
+            <td><%= book.author %></td>
+            <td class="book_content"><%= book.content %></td>
+            <td class="actions">
+              <%= link_to "edit", edit_book_path(book), class: "mb-sm btn btn-primary" %>
+              <%= link_to "destroy", book, method: :delete, confirm: "You Sure!?", class: "mb-sm btn btn-danger" %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
