@@ -1,8 +1,0 @@
-<div id="edit_book" class="panel panel-default">
-  <div class="panel-heading">
-    <div class="panel-title">Edit <%= @book.title %></div>
-  </div>
-  <%= form_for @book, url: book_path, :"data-parley-validate" => true do |form| %>
-    <%= render partial: "form", locals: {form: form} %>
-  <% end %>
-</div>
