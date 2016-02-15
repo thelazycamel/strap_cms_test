@@ -1,0 +1,43 @@
+<!-- START Sidebar (left)-->
+<div class="aside-inner">
+   <nav class="sidebar">
+      <!-- START sidebar nav-->
+      <ul class="nav">
+         <li class="nav-heading">
+            <span>Main Navigation</span>
+         </li>
+         <li class="<%= 'active' if controller?('singleview') && action?('index') %>">
+            <a href="/singleview" title="Single View">
+               <em class="icon-speedometer"></em>
+               <span>Single View</span>
+            </a>
+          </li>
+         <li class="<%= 'active' if controller?('singleview') && action?('index') %>">
+            <a href="/books" title="Books">
+               <em class="icon-grid"></em>
+               <span>Books</span>
+            </a>
+          </li>
+         <li class="<%= 'active' if controller?('singleview') && action?('charts') %>">
+            <a href="/charts" title="charts">
+               <em class="icon-graph"></em>
+               <span>Charts</span>
+            </a>
+          </li>
+         <li class="<%= 'active' if controller?('singleview') && action?('widgets') %>">
+            <a href="/widgets" title="Widget">
+               <em class="icon-grid"></em>
+               <span>Widgets</span>
+            </a>
+         </li>
+         <li class="<%= 'active' if controller?('singleview') && action?('post') %>">
+            <a href="/post" title="Post">
+               <em class="icon-doc"></em>
+               <span>Post</span>
+            </a>
+         </li>
+      </ul>
+      <!-- END sidebar nav-->
+   </nav>
+</div>
+<!-- END Sidebar (left)-->

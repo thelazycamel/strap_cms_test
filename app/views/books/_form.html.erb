@@ -1,0 +1,18 @@
+<div class="panel-body">
+  <div class="form-group">
+    <%= form.label :title, class: "control-label" %>
+    <%= form.text_field :title, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :author, class: "control-label" %>
+    <%= form.text_field :author, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :content, class: "control-label" %>
+    <%= form.text_area :content, class: "form-control" %>
+  </div>
+</div>
+<div class="panel-footer">
+  <%= link_to "cancel", books_path, class: "mb-sm btn btn-warning" %>
+  <%= form.submit "Submit", class: "mb-sm btn btn-primary" %>
+</div>
