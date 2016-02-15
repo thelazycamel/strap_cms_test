@@ -1,4 +1,5 @@
 *.swp
+.ruby-version
 config/database.yml
-log/**
-tmp/**
+log/
+tmp/
